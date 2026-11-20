@@ -3,17 +3,192 @@
   <head>
     <meta charset="UTF-8">
     <title>Soph in Stereo</title>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Patrick+Hand&display=swap" rel="stylesheet">
   </head> 
+  <style>
+    body {
+      background-color: #F7EEE7;
+      margin: 0;
+      color: #3d221a;
+      font-family: "Patrick Hand", cursive;
+    }
+    
+    .website-container {
+      width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    header {
+      padding: 25px, 55px;
+      border-bottom: 3px solid #211B18;
+    }
+    
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    nav ul {
+      list-style-type: none;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      margin: 20;
+      padding: 0;
+    }
+    
+    nav a {
+      text-decoration: none;
+      color: #40271F;
+      font-family: "Patrick Hand", cursive;
+      font-size: 18px;
+    }
+    nav a:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #40271F;
+    left: 0;
+    bottom: -6px;
+    transition: width 0.3s ease;
+    }
+    
+    nav a:hover:after {
+    width: 100%;
+    }
+    
+    nav a[href="#home"]:hover {
+      color: black;
+    }
+    
+    nav a[href="#noah"]:hover {
+        color: #9e7f71;
+    }
+
+    nav a[href="#sabrina"]:hover {
+        color: #d9a1a6;
+    }
+
+    nav a[href="#bruno"]:hover {
+        color: #7a0000;
+    }
+
+    nav a[href="#olivia"]:hover {
+        color: #774144;
+    }
+
+    nav a[href="#fantasy"]:hover {
+        color: #978fbb;
+    }
+    
+    #home {
+      text-align: center;
+      padding: 5px 0 35px 0;
+    }
+    
+    #home h1 {
+      font-family: "Bodoni Moda", serif;
+      font-size: 82px;
+      font-style: italic;
+      font-weight: normal;
+      margin: 5px 0 0 0;
+      color: #40271F;
+    }
+    
+    #home .subtitle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      font-family: "Patrick Hand", cursive;
+      font-size: 28px;
+      margin: 0;
+    }
+
+    #home .subtitle:before,
+    #home .subtitle:after {
+      content: "";
+      width: 105px;
+      height: 3px;
+      background-color: #211B18;
+    } 
+
+    #home .tagline {
+        font-family: "Bodoni Moda", serif;
+        font-style: italic;
+    }
+    .intro-columns {
+        display: grid;
+        grid-template-columns: 1fr 50px;
+        align-items: center;
+        gap: 35px;
+        width: 900px;
+        margin: 15px auto 0 auto;
+    }
+    
+    .concert-blurb {
+        width: 300px;
+        font-family: "Patrick Hand", cursive;
+        font-size: 21px;
+        line-height: 1.7;
+        text-align: left;
+        color: #40271F;
+        margin: 20px;
+    }
+    
+    .intro-columns img {
+      width: 400px;
+      height: 480px;
+      object-fit: cover;
+      display: block;
+    }
+  </style>
   
   <body>
-    <div class="website container">
+    <div class="website-container">
       <header>
-      <!--Navigation goes here -->
+       <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#noah">Noah Kahan</a></li>
+            <li><a href="#sabrina">Sabrina Carpenter</a></li>
+            <li><a href="#bruno">Bruno Mars</a></li>
+            <li><a href="#olivia">Olivia Dean</a></li>
+            <li><a href="#fantasy">Mr. Fantasy</a></li>
+         </ul>
+        </nav>
       </header>
-      <main>
+    <main>
         <section id="home">
-        <!--home content here -->
-        </section>
+          <h1>Soph in Stereo</h1>
+          
+          <p class="subtitle">
+            A CONCERT ARCHIVE
+          </p>
+          
+          <p class="tagline">
+            the nights, music, and memories in between
+          </p>
+          </div>
+      
+            <div class="intro-columns">
+
+        <p class="concert-blurb">
+            There is something special about live music.
+            The feeling of standing in a crowd, singing
+            along to your favourite songs, and sharing
+            moments with thousands of people who feel
+            the exact same way. Soph in Stereo is a
+            collection of the concerts, artists, and
+            unforgettable memories that have become
+            part of my story.
+        </p>
+
+        <img src="IMG_5620.jpeg" alt="A concert memory">
+      
         <section id="noah">
         <!--noah kahan content here -->
         </section>
@@ -29,11 +204,9 @@
         <section id="fantasy">
         <!-- mr. fantasy content here -->
         </section>
-      </main>
       
       <footer>
       <!-- footer content-->
       </footer>
-    </div> 
   </body>
 </html>
